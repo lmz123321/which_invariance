@@ -14,7 +14,7 @@ This repo contains the official implementation for the ICML2023 paper: [Which In
 
 By [Mingzhou Liu](https://scholar.google.com/citations?user=W0VTiFoAAAAJ&hl=en), Xiangyu Zheng, [Xinwei Sun](https://sunxinwei0625.github.io/sunxw.github.io/), Fang Fang, and [Yizhou Wang](http://cfcs.pku.edu.cn/people/faculty/yizhouwang/index.htm).
 
-
+Video introduction of the paper is available [here](https://recorder-v3.slideslive.com/#/share?share=83385&s=13f03e27-bfb1-49f5-833d-6741d3f22ce5).
 
 ## Major Requirements
 
