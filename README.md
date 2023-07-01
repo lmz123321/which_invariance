@@ -8,12 +8,13 @@
 </div>
 
 
-This repo contains the official implementation for the ICML2023 paper: [Which Invariance Should We Transfer: A Causal Minimax Approach](https://arxiv.org/abs/2107.01876).
+This repo contains the official implementation for the ICML2023 paper: [Which Invariance Should We Transfer: A Causal Minimax Approach](https://arxiv.org/abs/2107.01876). 
 
 **Our method uses causal discovery and equivalence classes searching to find the most robust subset for Out-of-Distribution (OOD) generalization.**
 
 By [Mingzhou Liu](https://scholar.google.com/citations?user=W0VTiFoAAAAJ&hl=en), Xiangyu Zheng, [Xinwei Sun](https://sunxinwei0625.github.io/sunxw.github.io/), Fang Fang, and [Yizhou Wang](http://cfcs.pku.edu.cn/people/faculty/yizhouwang/index.htm).
 
+Video introduction is available [here](https://recorder-v3.slideslive.com/#/share?share=83385&s=13f03e27-bfb1-49f5-833d-6741d3f22ce5).
 
 
 ## Major Requirements
