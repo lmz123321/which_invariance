@@ -1,7 +1,7 @@
 # split the Frontal, Temporal, Parietal, Occipital, Cingulum regions, into sup,mid,inf
 # generate a 25 nodes version of ADNI causal graph
 # B1-B22, C1-C3, S4, E=Age
-# aggregate those variables from ADNI30T15T_all and otput a aggrADNI30T15TAge25Nodes.csv
+# aggregate those variables from ADNI30T15T_all and output a aggrADNI30T15TAge25Nodes.csv
 
 import pandas as pd
 import os
@@ -142,7 +142,7 @@ class ADNIData():
 
     def map_aal_regions(self, ):
         r"""
-        Functs: - map AAL brain regions to SuStaIn regions and calculate sumation of volumes
+        Functs: - map AAL brain regions to SuStaIn regions and calculate summation of volumes
         Mapping Tab:
                 - B1,Frontal Sup Lobe [2101,2102,2111,2112,2601,2602]
                 - B2,Frontal Mid Lobe [2201,2202,2211,2212,2611,2612]
