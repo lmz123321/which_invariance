@@ -63,8 +63,8 @@ class BaseSet():
 class OptSet(BaseSet):
     """
     estimate fS'
-        1. shffle @X_do*={X3,X4,X5,M1,M2} and regenerate X2 by f2
-        2. train Y = f_S'(X_S',do(X_M)) in the regenereted samples
+        1. shuffle @X_do*={X3,X4,X5,M1,M2} and regenerate X2 by f2
+        2. train Y = f_S'(X_S',do(X_M)) in the regenerated samples
     estimate h*(S')
         1. replace M1 by J1(Y)
            regenerate:
