@@ -125,7 +125,7 @@ class NonLinearF(nn.Module):
         return self.function(covariates)
 
     def predict(self, covariates):
-        # assert self.trained, 'NonLinearF must be trained befored prediction'
+        # assert self.trained, 'NonLinearF must be trained before prediction'
         covariates = dfTotensor(covariates)
         return self.function(covariates).detach().numpy()
 
