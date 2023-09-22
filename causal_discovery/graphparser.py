@@ -84,7 +84,7 @@ class PDAGParser:
     def get_descendants(self, nodes):
         r"""
         Functs: - get Dec(nodes)={Dec(node1) \cup ... \cup Dec(nodei)} in the original graph
-                - note that, if node-i in nodes is descentant of node-j in nodes, then, descendants will also contain node-i
+                - note that, if node-i in nodes is descendant of node-j in nodes, then, descendants will also contain node-i
         """
         assert isinstance(nodes, set), 'Input must be a set of nodes.'
         descendants = list()
