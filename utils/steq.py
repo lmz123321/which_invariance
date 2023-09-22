@@ -10,7 +10,7 @@ def uniform(low, high, size):
 
 def duniform(low, high, size):
     """
-    generate random numbers from a Unifrom distribution [low,high]U[-high,-low]
+    generate random numbers from a Uniform distribution [low,high]U[-high,-low]
     """
     randsign = 2*np.random.randint(0,2,size)-1
     return randsign*np.random.uniform(low=low, high=high, size=size)
