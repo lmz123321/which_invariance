@@ -1790,7 +1790,7 @@ class AncestralGraph:
 
         while True:
             i_p_1_links = set()
-            # Find all unlabled links v->w adjacent to at least one link u->v labeled i, such that (u->v,v->w) is a legal pair.
+            # Find all unlabeled links v->w adjacent to at least one link u->v labeled i, such that (u->v,v->w) is a legal pair.
             for link in i_links:
                 u, v = link
                 for w in self._adjacent[v]:
