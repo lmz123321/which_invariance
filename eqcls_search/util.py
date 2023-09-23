@@ -20,8 +20,8 @@ def tolist(eqclses):
 
 def powerset(iterable):
     '''
-    generate the powerset of a itertable object
-    data: a (frozen)set of (fronze)sets
+    generate the powerset of a iterable object
+    data: a (frozen)set of (frozen)sets
     '''
     return frozenset(chain.from_iterable(toset(combinations(iterable, r)) 
                         for r in range(len(iterable)+1)))

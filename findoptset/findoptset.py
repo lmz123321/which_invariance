@@ -18,11 +18,11 @@ from functools import partial
 class OptSet(BaseSet):
     """
     estimate fS'
-        1. shffle @X_do* and regenerate its descentants
-        2. train Y = f_S'(X_S',do(X_M)) in the regenereted samples
+        1. shuffle @X_do* and regenerate its descendants
+        2. train Y = f_S'(X_S',do(X_M)) in the regenerated samples
     estimate h*(S')
         1. replace M1,M2,... by J1,J2,...
-           regenerate their descentants (topolygically)
+           regenerate their descendants (topologically)
         2. calculate Y_hat = f_S'(X_S',do(X_M)), where X_S',X_M~P(J)
         3. compute neg mse loss and optimize over Js
     """

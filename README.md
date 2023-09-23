@@ -8,7 +8,7 @@
 </div>
 
 
-This repo contains the official implementation for the ICML2023 paper: [Which Invariance Should We Transfer: A Causal Minimax Approach](https://arxiv.org/abs/2107.01876).
+This repo contains the official implementation for the ICML2023 paper: [Which Invariance Should We Transfer: A Causal Minimax Learning Approach](https://arxiv.org/abs/2107.01876).
 
 **Our method uses causal discovery and equivalence classes searching to find the most robust subset for Out-of-Distribution (OOD) generalization.**
 
@@ -54,7 +54,7 @@ Visualization (also applies to below datasets):
 
 Download the ADNI dataset [here](https://n.neurology.org/content/74/3/201)
 
-Preprocess and partition of hetergenous environment according to age:
+Preprocess and partition of heterogeneous environment according to age:
 
 ```
 python ./adni/extract.py
@@ -69,7 +69,7 @@ python ./adni/main.py
 
 #### IMPC dataset (Sec. F.2.1)
 
-Proprocess the data (or directly use the data provided under ```./data/impc/```):
+Preprocess the data (or directly use the data provided under ```./data/impc/```):
 
 ```
 python ./impc/extract.py
@@ -101,14 +101,14 @@ python ./causal_discovery/causal_discovery.py -p ./data/simulation/ -f 134581011
 
 Explanation:
 
-this command uses the [CD-NOD](https://causal-learn.readthedocs.io/en/latest/search_methods_index/Constraint-based%20causal%20discovery%20methods/CDNOD.html) algorthim for hetergenous causal discovery, it generates the followings under the the ```cache``` folder:
+this command uses the [CD-NOD](https://causal-learn.readthedocs.io/en/latest/search_methods_index/Constraint-based%20causal%20discovery%20methods/CDNOD.html) algorithm for heterogeneous causal discovery, it generates the followings under the ```cache``` folder:
 
 - ```auggraph.gml```: augment causal graph over $\{Y,\mathbf{X}_S,\mathbf{X}_M,E\}$.
 - ```stablegraph.gml```: stable causal graph over $\{Y,\mathbf{X}_S\}$.
 
 - ```graphparse.json```: local components such as $\mathbf{X}_M,\mathbf{X}_M^0,\mathbf{W}$, ect.
 
-- ```cit_cache.json```: intermeidiate results of the conditional independence (CI) test.
+- ```cit_cache.json```: intermediate results of the conditional independence (CI) test.
 
 #### Step-II: Equivalence classes search
 

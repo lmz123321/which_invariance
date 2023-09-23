@@ -37,7 +37,7 @@ def sort_alphabet(parser):
                 parser[key][subkey].sort(key=order)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Hetergenous causal discovery and component detection.')
+    parser = argparse.ArgumentParser(description='Heterogeneous causal discovery and component detection.')
     parser.add_argument('--file','-f', type=str, default='134581011151617.csv',
                         help='filename of the data (csv) file.')
     parser.add_argument('--path','-p', type=str, default='./data/simulation',

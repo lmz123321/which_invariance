@@ -30,7 +30,7 @@ class OptSet(BaseSet):
       - X17 = f17(X19)
     2. _f_S_prime
       - shffle X_do*={X4,X9,X13,X14,X17,X19} and regenerate X5 by f5
-      - train Y = f_S'(X_S',do(X_M)) in the regenereted samples, where X_M={X18,X19,X20}
+      - train Y = f_S'(X_S',do(X_M)) in the regenerated samples, where X_M={X18,X19,X20}
     3. _hstar
       - replace X18 by fJ18(X21,X22)
         replace X19 by fJ19(X25,Y)
@@ -157,7 +157,7 @@ class OptSet(BaseSet):
                 doData['X19'] = predXM[:, 1].unsqueeze(1)
                 doData['X20'] = predXM[:, 2].unsqueeze(1)
 
-            # regenerate descentants
+            # regenerate descendants
             doData['X5'] = self.f5(concat(doData, ['X6', 'X11', 'X19', 'Y']))
             doData['X4'] = self.f4(concat(doData, ['X3', 'X5', 'X6', 'X12', 'X22']))
             doData['X9'] = self.f9(concat(doData, ['X5', 'X8', 'X23']))

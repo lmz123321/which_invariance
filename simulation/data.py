@@ -80,7 +80,7 @@ class Data:
     def generate(self,verbose=False):
         """
         generate data for each env, aggregate them together with a domain index variable E
-        then, randly assign half for training and half for testing
+        then, randomly assign half for training and half for testing
         """
         for e in range(self.params['num_env']):
             aggrData = self._gen_env(e+1)
@@ -107,7 +107,7 @@ class Data:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Simulation data generation.')
     parser.add_argument('--params','-p', type=str, default='./data/simulation_params.json',
-                        help='path to the stuctural equation params file.')
+                        help='path to the structural equation params file.')
     parser.add_argument('--save','-s',type=str,default='./data/simulation/',
                        help='save path')
     args = parser.parse_args()
@@ -120,7 +120,7 @@ if __name__ == '__main__':
         ('X11','X10'),('X6','M2'),('X4','M2'),('X11','M2')])
 
     '''
-    # one may regenerate random structual equation params with the following code
+    # one may regenerate random structural equation params with the following code
     nonlins = list(functs.keys())
     params = {'num_env':20, 'size':100, 'dag': list(nx.topological_sort(dag))}
 
